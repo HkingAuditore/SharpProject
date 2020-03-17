@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SingleGrid.master.cs" Inherits="FineUI.Examples.master.SingleGrid" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder runat="server" ID="headCPH">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <f:PageManager ID="PageManager1" runat="server" />
+        <f:Panel ID="Panel1" runat="server" ShowBorder="true" ShowHeader="true" Title="母版页"
+            Layout="VBox" BoxConfigAlign="Stretch" BoxConfigPosition="Start"
+            Width="850px" Height="400px">
+            <Items>
+                <f:CPHConnector runat="server">
+                    <asp:ContentPlaceHolder ID="mainCPH" runat="server">
+                    </asp:ContentPlaceHolder>
+                </f:CPHConnector>
+            </Items>
+        </f:Panel>
+        <f:Window ID="Window1" Title="编辑" Hidden="true" EnableIFrame="true" runat="server"
+            CloseAction="HidePostBack"
+            EnableMaximize="true" EnableResize="true" OnClose="Window1_Close" Target="Top"
+            IsModal="True" Width="850px" Height="450px">
+        </f:Window>
+    </form>
+</body>
+</html>

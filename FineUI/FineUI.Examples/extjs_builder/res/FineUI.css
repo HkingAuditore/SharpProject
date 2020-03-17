@@ -1,0 +1,210 @@
+
+.f-hidden {
+	display: none;
+}
+
+.f-inline-block {
+	display: inline-block;
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+.gray {
+    color: gray;
+}
+
+
+.x-item-disabled {
+    opacity: .6;
+    -moz-opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+
+
+/* elbow */
+.x-elbow {
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(./images/elbow.gif) no-repeat 0px 0px;
+}
+
+.x-elbow-line {
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(./images/elbow-line.gif) no-repeat 0px 0px;
+}
+
+.x-elbow-end {
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(./images/elbow-end.gif) no-repeat 0px 0px;
+}
+
+.x-elbow-empty {
+    float: left;
+    height: 13px;
+    width: 18px;
+    background: transparent url(./images/elbow-empty.gif) no-repeat 0px 0px;
+}
+
+
+
+.x-boundlist-item-disabled {
+    background: #fff none repeat scroll 0% 0% !important;
+    border: 1px solid #fff !important;
+    cursor: default;
+    color: gray;
+}
+
+
+
+.f-input-text-hidden {
+	position: absolute;
+	top: 0;
+	left: -10000px;
+	width: 1px;
+	height: 1px;
+	border: none;
+	padding: 0;
+}
+
+
+
+.f-field-ddlpop-autowidth .x-boundlist-item {
+    white-space: nowrap;
+}
+
+
+.f-formrow .x-column-form-item {
+	margin-bottom: 5px;
+}
+
+
+
+
+.f-messagebox-errorfield {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.f-messagebox-errormsg {
+	font-size: 0.9em;
+}
+
+
+/* 如下是引入 extjs v6.0 所需要的 */
+
+/* 如果未设置此属性，16px高度的图片会占据19px高度，多出3px，这是常见CSS问题 */
+.f-grid-imagefield,
+.f-grid-static-checkbox,
+.f-grid-checkbox {
+    vertical-align: top;
+}
+
+
+/* 要能覆盖 .x-grid .x-grid-td 的设置 */
+.x-grid .x-grid-td.x-grid-cell-special {
+    vertical-align: top;
+    border-right-width: 0;
+}
+.x-grid .x-grid-td.x-grid-cell-row-numberer {
+    vertical-align: middle;
+}
+
+.x-grid .x-grid-with-col-lines .x-grid-cell {
+    border-right-width: 1px;
+}
+
+.x-grid-cell-special {
+    background-color: inherit;
+    background-image: none;
+}
+.x-grid-item-selected .x-grid-cell-special {
+    background-color: inherit;
+    background-image: none;
+}
+
+/* extjs v6.0, 不要设置序号列的背景色，否则和全选列在一起会非常奇怪 */
+.x-grid-cell-inner-row-numberer {
+    background-color: inherit;
+    background-image: none;
+}
+
+
+/* 去除focus的样式 */
+.x-grid-item-focused .x-grid-cell-inner:before,
+.x-column-header.x-column-header-focus .x-column-header-inner:after {
+    display: none;
+}
+.x-btn-focus,
+.x-tab-focus,
+.x-tool-focus,
+.x-btn-focus .x-btn-wrap {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+    
+
+
+
+/* 上层页面弹出窗体时可能会导致页面整体上移的问题 */
+.f-window-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 分组面板折叠时不显示底部边框 */
+.x-fieldset.x-fieldset-collapsed {
+    border-bottom-width: 0 !important;
+}
+
+
+.x-body {
+    background-color: #fff;
+}
+
+
+
+.x-viewport, 
+.x-viewport > .x-body {
+    overflow: hidden !important;
+}
+
+
+
+
+.x-ie11 .f-fileupload-buttononly .x-form-text-field-body-default,
+.x-ie10 .f-fileupload-buttononly .x-form-text-field-body-default,
+.x-ie9 .f-fileupload-buttononly .x-form-text-field-body-default,
+.x-ie8 .f-fileupload-buttononly .x-form-text-field-body-default {
+    min-width: inherit;
+}
+.x-ie11 .f-fileupload-buttononly .x-form-trigger-wrap,
+.x-ie10 .f-fileupload-buttononly .x-form-trigger-wrap,
+.x-ie9 .f-fileupload-buttononly .x-form-trigger-wrap,
+.x-ie8 .f-fileupload-buttononly .x-form-trigger-wrap {
+    display: inline;
+}
+.x-ie11 .f-fileupload-buttononly .x-form-trigger,
+.x-ie10 .f-fileupload-buttononly .x-form-trigger,
+.x-ie9 .f-fileupload-buttononly .x-form-trigger,
+.x-ie8 .f-fileupload-buttononly .x-form-trigger {
+    display: block;
+}
+
+
+/* v6.1.0, Tree has no horizontal scrollbar */
+.x-tree-view {
+    overflow-x: auto !important;
+}

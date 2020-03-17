@@ -1,0 +1,132 @@
+
+.x-toolbar.x-toolbar-default.x-docked-top {
+    border-bottom-color: #ccc !important;
+    border-bottom-width: 1px !important;
+    background-color: #dfeaf2;
+}
+
+.x-grid .x-toolbar.x-toolbar-default.x-docked-top {
+    border-bottom-width: 0 !important;
+}
+
+.x-toolbar.x-toolbar-default .x-toolbar-separator-horizontal {
+    border-left-color: #ccc;
+}
+
+
+.x-toolbar.x-toolbar-default.x-docked-bottom {
+    border-top-color: #ccc !important;
+    border-top-width: 1px !important;
+    background-color: #dfeaf2;
+}
+
+    .x-toolbar.x-toolbar-default.x-docked-bottom.x-toolbar-paging {
+        border-top-width: 0 !important;
+        background-color: #fff;
+    }
+
+.x-toolbar.x-toolbar-default.x-docked-left {
+    border-right-color: #ccc !important;
+    border-right-width: 1px !important;
+    background-color: #dfeaf2;
+}
+
+
+.x-toolbar.x-toolbar-default.x-docked-right {
+    border-left-color: #ccc !important;
+    border-left-width: 1px !important;
+    background-color: #dfeaf2;
+}
+
+
+
+
+.x-toolbar.x-toolbar-default .x-btn-default-toolbar-small {
+    background-image: none;
+    background-color: #3892d4 !important;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #4c9dd8), color-stop(50%, #3892d4), color-stop(51%, #358bc9), color-stop(0%, #3892d4));
+    background-image: -webkit-linear-gradient(top, #4c9dd8, #3892d4 50%, #358bc9 51%, #3892d4);
+    background-image: -moz-linear-gradient(top, #4c9dd8, #3892d4 50%, #358bc9 51%, #3892d4);
+    background-image: -o-linear-gradient(top, #4c9dd8, #3892d4 50%, #358bc9 51%, #3892d4);
+    background-image: -ms-linear-gradient(top, #4c9dd8, #3892d4 50%, #358bc9 51%, #3892d4);
+    background-image: linear-gradient(top,#4c9dd8, #3892d4 50%, #358bc9 51%, #3892d4);
+    border-color: #126daf;
+}
+
+    .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small .x-btn-inner {
+        color: #fff;
+    }
+
+    .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small.x-btn-over {
+        border-color: #1164a1;
+        background-image: none !important;
+        background-color: #3487c3 !important;
+        background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #4893c9), color-stop(50%, #3487c3), color-stop(51%, #3180b9), color-stop(0%, #3487c3));
+        background-image: -webkit-linear-gradient(top, #4893c9, #3487c3 50%, #3180b9 51%, #3487c3);
+        background-image: -moz-linear-gradient(top, #4893c9, #3487c3 50%, #3180b9 51%, #3487c3);
+        background-image: -o-linear-gradient(top, #4893c9, #3487c3 50%, #3180b9 51%, #3487c3);
+        background-image: -ms-linear-gradient(top, #4893c9, #3487c3 50%, #3180b9 51%, #3487c3);
+        background-image: linear-gradient(top,#4893c9, #3487c3 50%, #3180b9 51%, #3487c3);
+    }
+
+
+    .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small.x-btn-menu-active,
+    .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small.x-btn-pressed {
+        border-color: #0e5284;
+        background-image: none !important;
+        background-color: #2a6e9f !important;
+        background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #2a6e9f), color-stop(50%, #286897), color-stop(51%, #2a6e9f), color-stop(0%, #3f7ca8));
+        background-image: -webkit-linear-gradient(top, #2a6e9f, #286897 50%, #2a6e9f 51%, #3f7ca8);
+        background-image: -moz-linear-gradient(top, #2a6e9f, #286897 50%, #2a6e9f 51%, #3f7ca8);
+        background-image: -o-linear-gradient(top, #2a6e9f, #286897 50%, #2a6e9f 51%, #3f7ca8);
+        background-image: -ms-linear-gradient(top, #2a6e9f, #286897 50%, #2a6e9f 51%, #3f7ca8);
+        background-image: linear-gradient(top,#2a6e9f, #286897 50%, #2a6e9f 51%, #3f7ca8);
+    }
+
+/* extjs_v6中换成:after的形式
+.x-toolbar.x-toolbar-default .x-btn-default-toolbar-small .x-btn-arrow {
+    background-image: url(ext-theme-neptune/images/button/default-small-arrow.png);
+}
+*/
+.x-toolbar.x-toolbar-default .x-btn-wrap-default-toolbar-small.x-btn-arrow-right:after {
+    background-image: url(ext-theme-neptune/images/button/default-small-arrow.png);
+}
+
+
+
+
+.x-nbr .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small-mc,
+.x-nbr .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small-ml,
+.x-nbr .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small-mr,
+.x-nbr .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small-tc,
+.x-nbr .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small-tl,
+.x-nbr .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small-tr,
+.x-nbr .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small-bc,
+.x-nbr .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small-bl,
+.x-nbr .x-toolbar.x-toolbar-default .x-btn-default-toolbar-small-br {
+    background-image: none;
+    background-color: transparent;
+}
+
+
+
+
+/* extjs v6.0.1 */
+/* 缺省是170px，对于只显示按钮的上传控件，这个是不必要的 */
+.f-fileupload-buttononly .x-form-text-field-body-default {
+    min-width: initial;
+}
+
+/* 只显示按钮的上传控件，触发器图标居左显示 */
+.f-fileupload-buttononly .x-form-trigger {
+    text-align: left;
+    cursor: default;
+}
+
+/* 上传控件的触发器图标，光标显示手型 */
+.x-form-file-input {
+    width: auto;
+    height: auto;
+    top: -2px;
+    right: -2px;
+}

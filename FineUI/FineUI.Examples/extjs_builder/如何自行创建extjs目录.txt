@@ -1,0 +1,6 @@
+如何自行创建 extjs 目录：
+
+1. 首先下载 ExtJS v6.2.0
+	https://cdn.sencha.com/ext/gpl/ext-6.2.0-gpl.zip
+2. 将 ExtJS 库的全部内容拷贝到 extjs_source_all 目录
+3. 运行 build.bat，即可生成 extjs 目录（位于上一级目录）

@@ -1,0 +1,113 @@
+
+/*
+#loading-mask {
+    background-color: #fff;
+    height: 100%;
+    left: 0pt;
+    position: absolute;
+    top: 0pt;
+    width: 100%;
+    z-index: 20000;
+}
+
+
+#loading {
+    height: auto;
+    left: 45%;
+    padding: 2px;
+    position: absolute;
+    top: 40%;
+    z-index: 20001;
+}
+
+    #loading .loading-indicator {
+        background: white none repeat scroll 0%;
+        color: #555555;
+        font-family: tahoma,arial,helvetica;
+        font-size: 13px;
+        font-size-adjust: none;
+        font-stretch: normal;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        height: auto;
+        line-height: normal;
+        margin: 0pt;
+        padding: 10px;
+        text-align: center;
+    }
+
+.f-ajax-loading {
+    position: absolute;
+    top: 0px;
+    background-color: #F9EDBE;
+    border: 1px solid #F0C36D;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
+    padding: 6px 12px;
+    font-size: 13px;
+    z-index: 1000000;
+    display: none;
+}
+
+*/
+
+
+
+.f-loading-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 20000;
+    background-color: #fff;
+}
+
+.f-loading {
+    position: absolute;
+    z-index: 20001;
+    left: 45%;
+    top: 45%;
+    background-attachment: fixed;
+}
+
+    .f-loading .f-loading-img img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .f-loading .f-loading-img-custom img {
+        width: auto;
+        height: auto;
+    }
+
+    .f-loading .f-loading-text {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        text-align: center;
+        width: 200px;
+        margin-left: -100px;
+        margin-top: 3px;
+    }
+
+
+.f-ajax-loading {
+    position: absolute;
+    top: 0;
+    background-color: #f9edbe;
+    border: 1px solid #f0c36d;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+    color: #666;
+    padding: 6px 12px;
+    z-index: 200000;
+    display: none;
+}
+
+
+#f_ajax_loading_mask_mask {
+    opacity: 0.65;
+	filter: alpha(opacity=65);
+}

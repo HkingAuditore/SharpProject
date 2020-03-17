@@ -1,0 +1,45 @@
+
+
+.x-fieldset {
+    background: #fff;
+}
+
+
+
+.x-toolbar.x-toolbar-default.x-docked-top {
+    border-bottom-color: #eee !important;
+    border-bottom-width: 1px !important;
+}
+
+.x-toolbar.x-toolbar-default.x-docked-bottom {
+    border-top-color: #eee !important;
+    border-top-width: 1px !important;
+}
+
+.x-toolbar.x-toolbar-default.x-docked-left {
+    border-right-color: #eee !important;
+    border-right-width: 1px !important;
+}
+
+
+.x-toolbar.x-toolbar-default.x-docked-right {
+    border-left-color: #eee !important;
+    border-left-width: 1px !important;
+}
+
+
+
+
+.x-grid .x-toolbar.x-toolbar-default.x-docked-top {
+    border-bottom-width: 0!important;
+}
+
+.x-toolbar.x-toolbar-default.x-docked-bottom.x-toolbar-paging {
+    border-top-width: 0!important;
+}
+
+
+
+.f-fileupload-buttononly .x-form-text-field-body-default {
+    min-width: initial;
+}

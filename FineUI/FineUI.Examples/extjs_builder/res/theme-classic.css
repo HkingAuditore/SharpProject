@@ -1,0 +1,18 @@
+
+.x-grid-row-summary .x-grid-cell,
+.x-grid-row-summary .x-grid-itemwrap,
+.x-grid-row-summary .x-grid-cell-rowbody {
+    background-image: none;
+    border-width: 0;
+}
+
+
+.f-fileupload-buttononly .x-form-text-field-body-toolbar {
+    min-width: initial;
+}
+.x-ie11 .f-fileupload-buttononly .x-form-text-field-body-toolbar,
+.x-ie10 .f-fileupload-buttononly .x-form-text-field-body-toolbar,
+.x-ie9 .f-fileupload-buttononly .x-form-text-field-body-toolbar,
+.x-ie8 .f-fileupload-buttononly .x-form-text-field-body-toolbar {
+    min-width: inherit;
+}
