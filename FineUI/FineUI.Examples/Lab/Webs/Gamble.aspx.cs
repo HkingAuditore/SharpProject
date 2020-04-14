@@ -107,16 +107,24 @@ namespace WebSharp
         private void LaunchGamble()
         {
             IsUserPlay = true;
-            _gambleMoney = GetMoney();
-            ThisGamble.AddGambler(ThisUser, _gambleMoney, _userChoose);
-            LastRoundMoney = ThisGamble.GamblingMoney;
-            ThisGamble.StartGamble();
-            // var gambleCache = HttpRuntime.Cache;
-            // gambleCache.Insert( "tempGamble",ThisGamble);
-            PushResult(ThisGamble);
+            try
+            {
+                _gambleMoney = GetMoney();
+                ThisGamble.AddGambler(ThisUser, _gambleMoney, _userChoose);
+                LastRoundMoney = ThisGamble.GamblingMoney;
+                ThisGamble.StartGamble();
+                // var gambleCache = HttpRuntime.Cache;
+                // gambleCache.Insert( "tempGamble",ThisGamble);
+                PushResult(ThisGamble);
 
-            BigButton.Visible = false;
-            SmallButton.Visible = false;
+                BigButton.Visible = false;
+                SmallButton.Visible = false;
+
+            }
+            catch
+            {
+                Response.Write("<script>alert('请检查输入！')</script>");
+            }
 
         }
 

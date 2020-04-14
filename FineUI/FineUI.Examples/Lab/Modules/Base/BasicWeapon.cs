@@ -2,6 +2,7 @@
 
 namespace FineUI.Examples.Lab.Modules.Base
 {
+
     //武器
     [Flags]
     public enum Weapon : uint
@@ -22,7 +23,6 @@ namespace FineUI.Examples.Lab.Modules.Base
     {
         public BasicWeapon()
         {
-
         }
     }
 }

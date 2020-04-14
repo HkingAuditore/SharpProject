@@ -3,6 +3,7 @@ using System.Text;
 using System.Web.UI;
 using FineUI.Examples.Lab.Modules.Base;
 
+
 namespace FineUI.Examples.Lab.Webs
 {
     public partial class CalculatorWeb : System.Web.UI.Page
@@ -78,7 +79,7 @@ namespace FineUI.Examples.Lab.Webs
                 if (textBox0.Text == "0")
                 {
                     // 一次方程
-                    equation = new OneDegreeEquation(float.Parse(textBox2.Text), float.Parse(textBox1.Text));
+                    equation = new OneDegreeEquation((int)float.Parse(textBox2.Text), float.Parse(textBox1.Text));
                 }
                 else
                 {

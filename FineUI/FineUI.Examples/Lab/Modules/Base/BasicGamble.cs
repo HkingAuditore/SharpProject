@@ -3,10 +3,14 @@ using System.Collections.Generic;
 
 namespace FineUI.Examples.Lab.Modules.Base
 {
+
+
     public delegate float DeleGetReward(float reward);
+
     public enum GambleChoose
     {
-        Big, Small
+        Big,
+        Small
     }
 
     public class BasicGambleException : ApplicationException
@@ -17,7 +21,7 @@ namespace FineUI.Examples.Lab.Modules.Base
     }
 
 
-    public class Gambler:IComparable<Gambler>
+    public class Gambler : IComparable<Gambler>
     {
         public string ID;
         public float ContributeMoney { get; }
@@ -26,7 +30,7 @@ namespace FineUI.Examples.Lab.Modules.Base
 
         public GambleChoose Choose;
 
-        public Gambler(string id,GambleChoose choose, float contributeMoney,DeleGetReward getReward)
+        public Gambler(string id, GambleChoose choose, float contributeMoney, DeleGetReward getReward)
         {
             this.ID = id;
             this.Choose = choose;
@@ -62,12 +66,13 @@ namespace FineUI.Examples.Lab.Modules.Base
         /// 
 
         public List<Gambler> Gamblers { get; private set; } = new List<Gambler>();
+
         public float GamblingMoney { get; private set; }
         public int DiceResult { get; private set; }
 
 
 
-    
+
 
         public BasicGamble()
         {
@@ -76,10 +81,10 @@ namespace FineUI.Examples.Lab.Modules.Base
         }
 
         /// 赌徒入局
-        public void AddGambler(BasicUser gambler, float money,GambleChoose choose)
+        public void AddGambler(BasicUser gambler, float money, GambleChoose choose)
         {
 
-            Gamblers.Add(new Gambler(gambler.UserID, choose, money,gambler.ChangeMoney));
+            Gamblers.Add(new Gambler(gambler.UserID, choose, money, gambler.ChangeMoney));
             gambler.ChangeMoney(-money);
             GamblingMoney += money;
 
@@ -114,8 +119,8 @@ namespace FineUI.Examples.Lab.Modules.Base
         /// 分配赌资
         private void DistributeMoney(GambleChoose winChoose)
         {
-            List<Gambler> winners  = new List<Gambler>();
-        
+            List<Gambler> winners = new List<Gambler>();
+
             float winnersContribute = 0;
             foreach (var gambler in Gamblers)
             {
@@ -125,15 +130,17 @@ namespace FineUI.Examples.Lab.Modules.Base
                     winners.Add(gambler);
                 }
             }
+
             winners.Sort();
             for (int i = 0; i < winners.Count; i++)
             {
                 if (i == winners.Count - 1)
                 {
-                    winners[i].Reward = (float)Math.Round(GamblingMoney,2);
+                    winners[i].Reward = (float) Math.Round(GamblingMoney, 2);
                     GamblingMoney = 0;
                     break;
                 }
+
                 DistributeGamblerMoney(winners[i], winnersContribute);
                 winnersContribute -= winners[i].ContributeMoney;
             }
@@ -141,14 +148,14 @@ namespace FineUI.Examples.Lab.Modules.Base
 
 
         ///  分配赌徒个人赌资
-        private float DistributeGamblerMoney(Gambler gambler,float winnersContribute)
+        private float DistributeGamblerMoney(Gambler gambler, float winnersContribute)
         {
             Random luck = new Random();
             float minRate = gambler.ContributeMoney / winnersContribute;
             double actualRate = luck.NextDouble();
             // 概率重映射
             if (actualRate < minRate) actualRate = actualRate / minRate * (1 - minRate) + minRate;
-            gambler.Reward = (float) Math.Round(actualRate * GamblingMoney,2);
+            gambler.Reward = (float) Math.Round(actualRate * GamblingMoney, 2);
             gambler.GetReward(gambler.Reward);
             GamblingMoney -= gambler.Reward;
             return gambler.Reward;

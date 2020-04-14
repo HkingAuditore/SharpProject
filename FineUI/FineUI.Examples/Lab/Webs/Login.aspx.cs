@@ -54,6 +54,7 @@ namespace WebSharp
                     UserPassword.Focus();
 
                 }
+                Response.Write($"<script>alert('"+et.Message+"')</script>");
             }
             
         }
@@ -69,7 +70,7 @@ namespace WebSharp
             // 记录用户的登录时间
             // Session["userLoginTime"] = DateTime.Now.ToString();
             // _loginInfo.Append(Session["userLoginTime"]);
-            Response.Redirect("index.aspx");
+            System.Web.HttpContext.Current.Response.Redirect("Index.aspx");
         }
 
         /// <summary>

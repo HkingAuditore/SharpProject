@@ -1,13 +1,15 @@
 ﻿using System.Collections.Generic;
 using FineUI.Examples.Lab.Modules.Base;
 
+
 namespace FineUI.Examples.Lab.Modules
 {
     public class User : BasicUser
     {
-        public User(string userId, string userName, Gender userGender, string password, Weapon userWeapon, Home userHome,
-             string emailAccount, string userMail, string userPhone) 
-            : base(userId,userName, userGender, password,userWeapon,userHome,emailAccount,userMail,userPhone)
+        public User(string userId, string userName, Gender userGender, string password, Weapon userWeapon,
+            Home userHome,
+            string emailAccount, string userMail, string userPhone)
+            : base(userId, userName, userGender, password, userWeapon, userHome, emailAccount, userMail, userPhone)
         {
         }
 
@@ -102,7 +104,7 @@ namespace FineUI.Examples.Lab.Modules
 
         public static void AddUser(User user)
         {
-            UserDictionary.Add(user.UserID,user);
+            UserDictionary.Add(user.UserID, user);
         }
 
     }

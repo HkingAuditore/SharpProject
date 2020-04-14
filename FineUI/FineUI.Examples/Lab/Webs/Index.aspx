@@ -150,13 +150,15 @@
 
                 </div>
             </div>
-            <div class="row" style="text-align: center;padding-left: 40%;padding-right: 40%">
-                <div class="col-lg-12" >
-                    <form id="form1" runat="server">
-                        <asp:Button ID="Button1" runat="server"  CssClass="btn custom-confirm-btn" Text="前往赌场" OnClick="Button1_OnClick"/>
-
-                    </form>
-                </div>
+            <div class="row" style="text-align: center;padding-left: 20%;padding-right: 20%" >
+                <form id="form1" runat="server">
+                     <div class="col-lg-6" >
+                         <asp:Button ID="Button1" runat="server"  CssClass="btn custom-confirm-btn" Text="前往赌场" OnClick="Button1_OnClick"/>
+                     </div>
+                     <div class="col-lg-6" >
+                         <asp:Button ID="Button2" runat="server"  CssClass="btn custom-confirm-btn" Text="前往银行" OnClick="Button2_OnClick"/>
+                     </div>
+                </form>
             </div>
             <div class="row" style="text-align: center">
                 <asp:Label ID="Label8" runat="server" Text="DEAD OR ALIVE" Font-Names="Dirty Headline" Font-Size="50pt" ForeColor="#825E09"></asp:Label>

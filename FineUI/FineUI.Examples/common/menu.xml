@@ -829,5 +829,7 @@
     </TreeNode>
     <TreeNode Text="实验-展示C#常用Collection" NavigateUrl="~/Lab/Webs/ShowArray.aspx" IsNew="true" >
     </TreeNode>
+    <TreeNode Text="实验-完整计算器" NavigateUrl="~/Lab/Webs/FullCalculator.aspx" IsNew="true" >
+    </TreeNode>
   </TreeNode>
 </Tree>

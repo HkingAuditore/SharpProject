@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FineUI.Examples.Lab.Modules.Base;
 
+
 namespace FineUI.Examples.Lab.Modules
 {
     public class Gamble : BasicGamble

@@ -20,3 +20,14 @@ F:\MyCSharp\FineUI\FineUI.Examples\obj\Debug\FineUI.Examples.csproj.CoreCompileI
 F:\MyCSharp\FineUI\FineUI.Examples\obj\Debug\FineUI.Examples.csproj.CopyComplete
 F:\MyCSharp\FineUI\FineUI.Examples\obj\Debug\FineUI.Examples.dll
 F:\MyCSharp\FineUI\FineUI.Examples\obj\Debug\FineUI.Examples.pdb
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\bin\FineUI.Examples.dll.config
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\bin\FineUI.Examples.dll
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\bin\FineUI.Examples.pdb
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\bin\Newtonsoft.Json.dll
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\bin\FineUI.pdb
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\bin\Newtonsoft.Json.xml
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\obj\Debug\FineUI.Examples.csprojAssemblyReference.cache
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\obj\Debug\FineUI.Examples.csproj.CoreCompileInputs.cache
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\obj\Debug\FineUI.Examples.csproj.CopyComplete
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\obj\Debug\FineUI.Examples.dll
+F:\MyCSharp\SharpProject\SharpProject\FineUI\FineUI.Examples\obj\Debug\FineUI.Examples.pdb

@@ -1,6 +1,7 @@
 ﻿using System;
 using FineUI.Examples.Lab.Modules.Base;
 
+
 namespace FineUI.Examples.Lab.Modules
 {
     public class Calculator : BasicCalculator

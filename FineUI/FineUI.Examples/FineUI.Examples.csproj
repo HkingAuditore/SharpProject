@@ -198,7 +198,9 @@
     <Content Include="Lab\Resource\IMG_5284.jpg" />
     <Content Include="Lab\Resource\LOGO__B&amp;W.jpg" />
     <Content Include="Lab\Resource\RDR.jpg" />
+    <Content Include="Lab\Webs\Bank.aspx" />
     <Content Include="Lab\Webs\CalculatorWeb.aspx" />
+    <Content Include="Lab\Webs\FullCalculator.aspx" />
     <Content Include="Lab\Webs\Gamble.aspx" />
     <Content Include="Lab\Webs\Index.aspx" />
     <Content Include="Lab\Webs\Login.aspx" />
@@ -1200,11 +1202,14 @@
     <Compile Include="Lab\Controllers\LoginController.cs" />
     <Compile Include="Lab\Controllers\RegisterController.cs" />
     <Compile Include="Lab\Controllers\StructShowController.cs" />
+    <Compile Include="Lab\Modules\Base\BasicBankAccount.cs" />
     <Compile Include="Lab\Modules\Base\BasicCalculator.cs" />
     <Compile Include="Lab\Modules\Base\BasicGamble.cs" />
+    <Compile Include="Lab\Modules\Base\BasicGame.cs" />
     <Compile Include="Lab\Modules\Base\BasicPlayer.cs" />
     <Compile Include="Lab\Modules\Base\BasicUser.cs" />
     <Compile Include="Lab\Modules\Base\BasicWeapon.cs" />
+    <Compile Include="Lab\Modules\Base\Expression.cs" />
     <Compile Include="Lab\Modules\Calculator.cs" />
     <Compile Include="Lab\Modules\Gamble.cs" />
     <Compile Include="Lab\Modules\User.cs" />
@@ -1212,12 +1217,26 @@
       <DependentUpon>Validata.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Lab\Webs\Bank.aspx.cs">
+      <DependentUpon>Bank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lab\Webs\Bank.aspx.designer.cs">
+      <DependentUpon>Bank.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Lab\Webs\CalculatorWeb.aspx.cs">
       <DependentUpon>CalculatorWeb.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Lab\Webs\CalculatorWeb.aspx.designer.cs">
       <DependentUpon>CalculatorWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lab\Webs\FullCalculator.aspx.cs">
+      <DependentUpon>FullCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lab\Webs\FullCalculator.aspx.designer.cs">
+      <DependentUpon>FullCalculator.aspx</DependentUpon>
     </Compile>
     <Compile Include="Lab\Webs\Gamble.aspx.cs">
       <DependentUpon>Gamble.aspx</DependentUpon>
