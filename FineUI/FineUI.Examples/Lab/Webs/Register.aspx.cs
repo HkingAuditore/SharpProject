@@ -183,7 +183,7 @@ namespace WebSharp
             string pwdConfirm = UserPasswordConfirm.Text;
             if (FileUpload1.HasFile)
             {
-                StringBuilder imgPath = new StringBuilder(Server.MapPath("../../Users/Avatars/"));
+                StringBuilder imgPath = new StringBuilder(Server.MapPath("../Data/Users/Avatars/"));
                 // 只允许jpg格式
                 if(!CheckImgType(FileUpload1.FileName, "jpg"))return;
                 

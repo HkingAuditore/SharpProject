@@ -179,7 +179,7 @@ namespace FineUI.Examples.Lab.Modules.Base
         private float FictionA { get; set; }
         private float FictionB { get; set; }
 
-        public OneDegreeEquation(int degree, params float[] fictions) : base(1, fictions)
+        public OneDegreeEquation(params float[] fictions) : base(1, fictions)
         {
             FictionA = fictions[0];
             FictionB = fictions[1];

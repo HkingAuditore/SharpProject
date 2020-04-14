@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using FineUI;
 using FineUI.Examples.Lab.Controllers;
 
 namespace WebSharp

@@ -78,6 +78,10 @@ namespace FineUI.Examples.Lab.Webs
                 Equation equation;
                 if (textBox0.Text == "0")
                 {
+                    if (textBox1.Text == "0")
+                    {
+                        throw new BasicCalculatorException("请输入至少一个系数！");
+                    }
                     // 一次方程
                     equation = new OneDegreeEquation((int)float.Parse(textBox2.Text), float.Parse(textBox1.Text));
                 }

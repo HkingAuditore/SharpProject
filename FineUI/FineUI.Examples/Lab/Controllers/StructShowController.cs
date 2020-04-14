@@ -146,8 +146,9 @@ namespace FineUI.Examples.Lab.Controllers
                     case StructType.NormalArray:
                         if (Array.IndexOf(NormalArray, item) != -1)
                         {
-                            for (var i = Array.IndexOf(NormalArray, item); i < ArrayCount - 1; i++)
-                                NormalArray[i] = NormalArray[i + 1];
+                            NormalArray[Array.IndexOf(NormalArray, item)] = default(TItemType);
+                            // for (var i = Array.IndexOf(NormalArray, item); i < ArrayCount - 1; i++)
+                            //     NormalArray[i] = NormalArray[i + 1];
                             ArrayCount--;
                         }
                         else
@@ -160,8 +161,9 @@ namespace FineUI.Examples.Lab.Controllers
                     case StructType.Array:
                         if (Array.IndexOf(ArrayInstance, item) != -1)
                         {
-                            for (var i = Array.IndexOf(ArrayInstance, item); i < ArrayCount - 1; i++)
-                                ArrayInstance.SetValue(ArrayInstance.GetValue(i + 1), i);
+                            ArrayInstance.SetValue(null,Array.IndexOf(ArrayInstance, item));
+                            // for (var i = Array.IndexOf(ArrayInstance, item); i < ArrayCount - 1; i++)
+                            //     ArrayInstance.SetValue(ArrayInstance.GetValue(i + 1), i);
                             ArrayCount--;
                         }
                         else
