@@ -204,6 +204,7 @@
     <Content Include="Lab\Webs\Gamble.aspx" />
     <Content Include="Lab\Webs\Index.aspx" />
     <Content Include="Lab\Webs\Login.aspx" />
+    <Content Include="Lab\Webs\RankingList.aspx" />
     <Content Include="Lab\Webs\Register.aspx" />
     <Content Include="Lab\Webs\ShowArray.aspx" />
     <Content Include="layout\column_autoheight.aspx" />
@@ -1258,6 +1259,13 @@
     </Compile>
     <Compile Include="Lab\Webs\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lab\Webs\RankingList.aspx.cs">
+      <DependentUpon>RankingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lab\Webs\RankingList.aspx.designer.cs">
+      <DependentUpon>RankingList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Lab\Webs\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

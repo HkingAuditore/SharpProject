@@ -831,5 +831,7 @@
     </TreeNode>
     <TreeNode Text="实验-完整计算器" NavigateUrl="~/Lab/Webs/FullCalculator.aspx" IsNew="true" >
     </TreeNode>
+    <TreeNode Text="实验-数据库" NavigateUrl="~/Lab/Webs/RankingList.aspx" IsNew="true" >
+    </TreeNode>
   </TreeNode>
 </Tree>
